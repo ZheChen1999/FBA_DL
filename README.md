@@ -35,23 +35,6 @@ This repository contains the implementation of a deep learning model designed to
    pip install -r requirements.txt
    ```
 
-## Usage
-### Training
-To train the segmentation model:
-```bash
-python scripts/train_segmentation.py
-```
-To train the classification model:
-```bash
-python scripts/train_classification.py
-```
-
-### Evaluation
-Evaluate the trained model:
-```bash
-python scripts/evaluate.py
-```
-
 ## Results
 - Internal cohort: Accuracy of 94.45%, sensitivity of 87.38%, and specificity of 97.24%.
 - External validation: Accuracy of 90.05%, sensitivity of 86.31%, and specificity of 89.15%.
