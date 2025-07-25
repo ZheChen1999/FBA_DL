@@ -155,6 +155,26 @@ Detailed methodology, datasets, training protocols, and ablation studies are pro
 
 ---
 
+### Table S6: Parameter Summary Table
+
+| Component                  | Parameter/Setting                                            |
+|----------------------------|--------------------------------------------------------------|
+| CT Preprocessing           | HU clipping: –1000 to +400; isotropic voxel size: 1.0 mm³    |
+| Intensity Normalization    | Min–max scaling to [0, 1]                                     |
+| Segmentation Architecture  | MedpSeg (3D U-Net + attention + residual blocks)             |
+| Training Optimizer         | Adam, LR: 1×10⁻⁴, weight decay: 1×10⁻⁵, batch size: 16        |
+| Loss Function              | Focal Loss                                                    |
+| Snapshot Rendering         | 12 views, camera distance: 150 mm, resolution: 224×224       |
+| Classification Backbone    | ResNet-18 (best), with comparison to DenseNet, Swin-T, etc.   |
+| Classification Optimizer   | Adam, LR: 1×10⁻⁴ with scheduler, batch size: 16              |
+| Loss Function              | Focal loss (α = 0.25, γ = 2.0)                               |
+| Validation Strategy        | 5-fold cross-validation, early stopping (patience = 10)      |
+| Inference Pipeline         | Fully automated for segmentation and classification          |
+| Reproducibility Tools      | Code and configs available at: github.com/ZheChen1999/FBA_DL |
+
+_In summary_: This study presents an end-to-end DL pipeline combining high-precision airway segmentation and CT-based classification to detect radiolucent FBA. The model generalizes well across multiple cohorts and offers clinically meaningful improvements over expert interpretation in precision, highlighting its potential as a second-reader and triage aid in complex diagnostic settings.
+
+
 ## 📜 License
 
 This project is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
