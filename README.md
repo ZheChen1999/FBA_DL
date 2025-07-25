@@ -28,21 +28,6 @@ Radiolucent foreign body aspiration (FBA) is challenging to diagnose due to its 
 
 ---
 
-## 📁 Repository Structure
-
-```
-FBA_DL/
-├── segmentation/           # MedpSeg segmentation model
-├── classification/         # ResNet-18 classifier
-├── preprocessing/          # CT preprocessing and projection generation
-├── utils/                  # Evaluation tools and helpers
-├── configs/                # Config files and hyperparameters
-├── demo/                   # Visualization and example scripts
-└── README.md               # Project documentation
-```
-
----
-
 ## ⚙️ Installation
 
 Requires **Python 3.8+**, **PyTorch 1.10+**
