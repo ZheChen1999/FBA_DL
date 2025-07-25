@@ -46,7 +46,7 @@ pip install -r requirements.txt
 * **Snapshot generation**: Multi-angle 2D views of 3D segmented airway
 * **Classification**: ResNet-18 with Focal Loss and data augmentation
 * **Training strategy**: 5-fold cross-validation, early stopping
-* **Hardware**: Dual RTX A5000 GPUs, NVIDIA RTX 3090 for segmentation
+* **Hardware**: Dual RTX A5000 GPUs for segmentation
 
 ---
 
