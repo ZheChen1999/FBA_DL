@@ -40,34 +40,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Quick Start
-
-### 1. Preprocess CT scans
-
-```bash
-python preprocessing/preprocess_ct.py --input ./data/ct_raw/ --output ./data/processed/
-```
-
-### 2. Run airway segmentation
-
-```bash
-python segmentation/run_medpseg.py --input ./data/processed/ --output ./data/airway_masks/
-```
-
-### 3. Generate 12-view projections
-
-```bash
-python preprocessing/generate_views.py --input ./data/airway_masks/ --output ./data/snapshots/
-```
-
-### 4. Train ResNet-18 classifier
-
-```bash
-python classification/train_resnet18.py --data ./data/snapshots/ --epochs 100
-```
-
----
-
 ## 🧠 Technical Highlights
 
 * **Airway segmentation**: 3D U-Net (MedpSeg) with expert-in-the-loop refinement
